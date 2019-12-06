@@ -1,0 +1,22 @@
+package car_dealership;
+
+public class Dealership {
+    public static void main(String[]args){
+        //Utworzenie klienta salonu samochodowego
+        Customer cust1=new Customer();
+        cust1.setName("Tom");
+        cust1.setAddress("123 WallStreet");
+        cust1.setCashOnHand(12000);
+        Employee emp1=new Employee();
+        Employee emp2=new Employee();
+        Vehicle vehicle=new Vehicle();
+        vehicle.setMake("Honda");
+        vehicle.setModel("Accord");
+        vehicle.setPrice(15000);
+        Employee emp=new Employee();
+        cust1.purchaseCar(vehicle,emp,true);
+
+
+
+    }
+}
